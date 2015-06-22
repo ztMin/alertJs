@@ -17,7 +17,7 @@ In your web page:
 <script src="dist/alertjs.min.js"></script>
 <script>
   jQuery(function ($) {
-    $.awesome(); // "awesome"
+    $.alertjs(); // "awesome"
   });
 </script>
 ```
