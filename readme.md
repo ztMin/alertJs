@@ -1,16 +1,7 @@
-# alertJs
-
-> alert style
 
 
-## Getting Started
+## 使用方法：
 
-Download the [production version][min] or the [development version][max].
-
-[min]: https://raw.githubusercontent.com/ztMin/jquery-alertjs/master/dist/jquery.alertjs.min.js
-[max]: https://raw.githubusercontent.com/ztMin/jquery-alertjs/master/dist/jquery.alertjs.js
-
-In your web page:
 
 ```html
 <script src="jquery.js"></script>
@@ -41,8 +32,3 @@ In your web page:
   });
 </script>
 ```
-
-
-## License
-
-MIT © ztMin
