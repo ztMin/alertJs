@@ -18,6 +18,12 @@ module.exports = function (grunt) {
     clean: {
       files: ['dist']
     },
+    copy:{
+      dist:{
+        src:['dist/*.*'],
+        dest:['src/*.*']
+      }
+    },
     concat: {
       options: {
         banner: '<%= banner %>',
@@ -25,7 +31,7 @@ module.exports = function (grunt) {
       },
       dist: {
         src: ['src/<%= pkg.name %>.js'],
-        dest: 'dist/jquery.<%= pkg.name %>.js'
+        dest: 'scr/jquery.<%= pkg.name %>.js'
       }
     },
     uglify: {
@@ -34,13 +40,13 @@ module.exports = function (grunt) {
       },
       dist: {
         src: '<%= concat.dist.dest %>',
-        dest: 'dist/jquery.<%= pkg.name %>.min.js'
+        dest: 'src/jquery.<%= pkg.name %>.min.js'
       }
     },
     cssmin: {
       dist: {
-        src: 'dist/jquery.*.css',
-        dest: 'dist/jquery.<%= pkg.name %>.min.css'
+        src: 'src/jquery.*.css',
+        dest: 'src/jquery.<%= pkg.name %>.min.css'
       }
     },
     qunit: {
