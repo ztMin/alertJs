@@ -4,11 +4,14 @@
 
 
 ```html
+<link rel="stylesheet" href="../src/jquery.alertjs.min.css">
 <script src="jquery.js"></script>
-<script src="dist/alertjs.min.js"></script>
+<script src="../src/jquery.alertjs.min.js"></script>
 <script>
   jQuery(function ($) {
-    $.alert('窗口'); //
+  	//传入字符串使用方式
+    var box=$.alert('窗口');
+    //可配置项
     var option = {
       css:'indexAlert', //追加css
       alert:'alert',  //背景元素样式名称
@@ -21,13 +24,13 @@
       isScroll:true,  //是否阻止滚动
       fnBack:function(){} //回调函数
     };
-    var box=$.alert(option);
+    box=$.alert(option);
     /*
     *方法
     *****box.show(); 		//显示
     *****box.position();	//窗体位置设置，传入css对象
-    *****box.close();		//关闭
     *****box.setHtml();		//设内容
+    *****box.close();		//关闭
     */
   });
 </script>
